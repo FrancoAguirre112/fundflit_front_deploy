@@ -40,7 +40,7 @@ const CampaignDetails = () => {
     };
 
     fetchCampaigns();
-  }, [web5]);
+  }, [web5, decodedDid]);
 
   useEffect(() => {
     if (campaign) {

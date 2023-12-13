@@ -134,7 +134,7 @@ export const readCampaignDetail = async (
   web5: any,
   recordId: string | string[]
 ) => {
-  console.log(did, recordId)
+  console.log(did, recordId);
   try {
     const { records, status } = await web5.dwn.records.query({
       from: did,
@@ -145,7 +145,7 @@ export const readCampaignDetail = async (
       },
     });
 
-    console.log(records)
+    console.log(records);
 
     const campaignPromises = records.map(async (record: any) => {
       const data = await record.data.json();
@@ -190,13 +190,14 @@ export const readPublicCampaigns = async (web5: any) => {
     const campaignArr = await Promise.all(
       data.map(async (campaign) => {
         return {
+          did: campaign.did,
           data: await readCampaignDetail(campaign.did, web5, campaign.recordID),
           recordID: campaign.recordID,
         };
       })
     );
 
-    return campaignArr as { data: Campaign; recordID: string }[];
+    return campaignArr as { did: string; data: Campaign; recordID: string }[];
   } catch (error) {
     console.error("Error fetching public campaigns:", error);
     return [];
@@ -233,7 +234,6 @@ export const updateCampaignFunds = async (
         },
       },
     });
-
 
     const updatedRecords = await Promise.all(
       records?.map(async (record: any) => {

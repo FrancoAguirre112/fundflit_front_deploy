@@ -14,7 +14,7 @@ import Spinner from "@/components/Spinner";
 const Campaigns = () => {
   const { web5, myDID } = useWeb5();
   const [campaigns, setCampaigns] = useState<
-    { data: Campaign; recordID: string }[] | null
+    { did:string, data: Campaign; recordID: string }[] | null
   >(null);
   const {
     register,
@@ -35,7 +35,7 @@ const Campaigns = () => {
       if (web5Mounted) {
         try {
           const publicCampaigns = await readPublicCampaigns(web5);
-          // console.log(publicCampaigns);
+          console.log(publicCampaigns);
           setCampaigns(publicCampaigns);
         } catch (error) {
           // Handle errors if needed
@@ -47,29 +47,29 @@ const Campaigns = () => {
     fetchCampaigns();
   }, [web5Mounted]);
 
-  const fetchData = async (did: string) => {
-    const useDID = did?.search || myDID;
-    if (did && web5) {
-      // console.log(useDID);
-      try {
-        const campaignArray = await readCampaigns(useDID, web5);
+  // const fetchData = async (did: string) => {
+  //   const useDID = did?.search || myDID;
+  //   if (did && web5) {
+  //     // console.log(useDID);
+  //     try {
+  //       const campaignArray = await readCampaigns(useDID, web5);
 
-        setCampaigns(campaignArray);
-      } catch (error) {
-        // Handle errors if any
-        console.error(error);
-      }
-    } else if (web5 && !did) {
-      try {
-        const campaignArray = await readCampaigns(myDID, web5);
-        setCampaigns(campaignArray);
-        console.log(myDID);
-      } catch (error) {
-        // Handle errors if any
-        console.error(error);
-      }
-    }
-  };
+  //       setCampaigns(campaignArray);
+  //     } catch (error) {
+  //       // Handle errors if any
+  //       console.error(error);
+  //     }
+  //   } else if (web5 && !did) {
+  //     try {
+  //       const campaignArray = await readCampaigns(myDID, web5);
+  //       setCampaigns(campaignArray);
+  //       console.log(myDID);
+  //     } catch (error) {
+  //       // Handle errors if any
+  //       console.error(error);
+  //     }
+  //   }
+  // };
 
   const onSubmit = (data: any) => {
     const filteredCampaigns = campaigns?.filter((campaign) => {
@@ -149,7 +149,7 @@ const Campaigns = () => {
                     {
                       <CampaignCard
                         campaign={campaign.data}
-                        did={myDID}
+                        did={campaign.did}
                         record={campaign.recordID}
                       />
                     }
