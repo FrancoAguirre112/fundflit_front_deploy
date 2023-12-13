@@ -34,6 +34,7 @@ const CampaignDetails = () => {
     const fetchCampaigns = async () => {
       if (web5) {
         const camp = await readCampaignDetail(decodedDid, web5, campaignRecord);
+        console.log(camp)
         setCampaign(camp);
       }
     };

@@ -73,7 +73,7 @@ export const createCampaign = async (
     const { record: initialrecord } = await web5.dwn.records.create({
       data: updatedData,
       message: {
-        schema: "campaign",
+        schema: "blogpost",
         dataFormat: "application/json",
         protocol: "http://test3",
         protocolPath: "campaign",
@@ -134,6 +134,7 @@ export const readCampaignDetail = async (
   web5: any,
   recordId: string | string[]
 ) => {
+  console.log(did, recordId)
   try {
     const { records, status } = await web5.dwn.records.query({
       from: did,
@@ -143,6 +144,8 @@ export const readCampaignDetail = async (
         },
       },
     });
+
+    console.log(records)
 
     const campaignPromises = records.map(async (record: any) => {
       const data = await record.data.json();
