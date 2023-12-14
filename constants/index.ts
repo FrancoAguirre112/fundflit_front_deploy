@@ -188,7 +188,7 @@ export const members = [
   },
   {
     id: 4,
-    imgUrl: "/assets/franco.jpeg",
+    imgUrl: "/assets/gloria.jpg",
     name: "Gloria Ugwuanyi",
     position: "Frontend Developer & Product Designer",
   },
