@@ -9,8 +9,8 @@ const Features = () => {
         Our Amazing Features 😍
       </h2>
       <p className="text-[16px] px-6 lg:pl-[7rem] mb-6 py-3 text-gray-50 xl:max-w-[520px] text-center lg:text-left">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam
-        consequatur, quaerat sed nam pariatur unde!
+        Our features align with the needs of both startup founders and investors
+        while incorporating innovative elements.
       </p>
       <div className="flexBetween padding-container max-container flex flex-col pb-10">
         <div className="flexBetween flex-wrap gap-3">

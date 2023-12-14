@@ -43,6 +43,7 @@ export const FOOTER_LINKS = [
   {
     title: "Learn More",
     links: ["About Fundflit", "Privacy Policy", "Contact Us", "Jobs"],
+    url: ["/about", "/", "/contact", "/"]
   },
   {
     title: "Our Community",
@@ -169,27 +170,27 @@ export const numbers = [
 export const members = [
   {
     id: 1,
-    imgUrl: "/assets/about-img1.jpeg",
-    name: "Michael Scott",
-    position: "General Manager",
+    imgUrl: "/assets/Chris.jpeg",
+    name: "Chris Awoke",
+    position: "Team Lead and Frontend Engineer",
   },
   {
     id: 2,
-    imgUrl: "/assets/about-img2.jpeg",
-    name: "Michael Scott",
-    position: "General Manager",
+    imgUrl: "/assets/franco.jpeg",
+    name: "Franco Aguirre",
+    position: "Frontend Developer & Chief Technical Officer",
   },
   {
     id: 3,
-    imgUrl: "/assets/about-img3.png",
-    name: "Michael Scott",
-    position: "General Manager",
+    imgUrl: "/assets/fawaz.jpg",
+    name: "Fawaz Oduola",
+    position: "Backend Developer",
   },
   {
     id: 4,
-    imgUrl: "/assets/about-img4.png",
-    name: "Michael Scott",
-    position: "General Manager",
+    imgUrl: "/assets/franco.jpeg",
+    name: "Gloria Ugwuanyi",
+    position: "Frontend Developer & Product Designer",
   },
 ];
 
@@ -197,35 +198,35 @@ export const members = [
 export const values = [
   {
     imgUrl: "/assets/about-img4.png",
-    value: "We are commited.",
+    value: "Innovation",
     detail:
-      "Conversion angel investor entrepreneur first mover advantage. Handshake infographic mass market crowdfunding iteration. ",
+      "We embrace and drive innovation, pushing the boundaries of what's possible in the crowdfunding space. We are a platform that thrives on pioneering ideas and technologies.",
   },
   {
     imgUrl: "/assets/about-img2.jpeg",
-    value: "We are responsible.",
+    value: "Transparency",
     detail:
-      "Conversion angel investor entrepreneur first mover advantage. Handshake infographic mass market crowdfunding iteration. ",
+      "Transparency is the cornerstone of our platform. We believe in open communication, clear processes, and providing users with the information they need to make informed decisions.",
   },
   {
     imgUrl: "/assets/about-img3.png",
-    value: "We aim for progress.",
+    value: "Decentralization",
     detail:
-      "Conversion angel investor entrepreneur first mover advantage. Handshake infographic mass market crowdfunding iteration. ",
+      "We are committed to the principles of decentralization, leveraging Web5 technologies to empower individuals and distribute decision-making across our platform.",
   },
 ];
 
 // About page our misson section
 export const missions = [
   {
-    highlight: "commited.",
+    highlight: "vision.",
     detail:
-      "Conversion angel investor entrepreneur first mover advantage. Handshake infographic mass market crowdfunding iteration. ",
+      "To be the beacon of innovation in the Web5 crowdfunding landscape, where dreams take flight and communities thrive.",
   },
   {
-    highlight: "responsible.",
+    highlight: "mission.",
     detail:
-      "Conversion angel investor entrepreneur first mover advantage. Handshake infographic mass market crowdfunding iteration. Handshake infographic mass market crowdfunding iteration. Handshake infographic mass market crowdfunding iteration. ",
+      "To provide a dynamic and decentralized crowdfunding platform on the cutting edge of Web5 technology. Through transparency, inclusivity, and the relentless pursuit of excellence, we aim to create a space where every contribution propels not just a project forward but an entire community towards a future defined by innovation, collaboration, and positive impact.",
   },
 ];
 

@@ -7,7 +7,7 @@ const Our_Values = () => {
             <div className='md:w-[60%] xs:w-[70%] w-[80%]'>
                 <span className='md:text-base text-xs'>Our values</span>
                 <h2 className=' md:text-[3rem] sm:text-[2.5rem] text-[1.7rem] my-4'>Things we believe in</h2>
-                <p className='text-base leading-8'> Handshake infographic mass market crowdfunding iteration. Sales user experience branding growth hacking holy grail monetization conversion prototype stock network effects. Learning curve network effects return on investment.</p>
+                <p className='text-base leading-8'> At the heart of our platform lie a set of core values that steer our every decision, shape our culture, and define the way we engage with our community. These values are more than principles; they are the bedrock of our commitment to creators, backers, and the broader Web5 ecosystem.</p>
             </div>
             <div className=" md:w-[60%] xs:w-[70%] w-[85%] flex flex-col items-center justify-between gap-10 mt-10">
                 {values.map((value) => (

@@ -5,8 +5,8 @@ const Our_Team = () => {
         <section className='h-fit flex flex-col justify-center items-center py-20'>
             <div className='md:w-[60%] sm:w-[70%] w-[80%]'>
                 <span className='md:text-base text-xs'>Our Team</span>
-                <h2 className=' md:text-[3rem] sm:text-[2.5rem] text-[1.7rem] my-4'>The leadership team</h2>
-                <p className='text-base leading-8'> Conversion angel investor entrepreneur first mover advantage. Handshake infographic mass market crowdfunding iteration. Sales user experience branding growth hacking holy grail monetization conversion prototype stock network effects. Learning curve network effects return on investment.</p>
+                <h2 className=' md:text-[3rem] sm:text-[2.5rem] text-[1.7rem] my-4'>The men behind the sin</h2>
+                <p className='text-base leading-8'> Our team is comprised of individuals who bring a wealth of experience, creativity, and dedication to the table. Together, we are united by a shared vision of empowering founders and fostering a vibrant community. Get to know the faces behind Fundflit.</p>
             </div>
             <div className=" flex xs:flex-nowrap flex-wrap xl:gap-10 md:gap-5 xs:gap-4 gap-2 items-center sm:justify-center justify-between mt-10 xl:px-24 px-8">
                 {members.map((member) => (

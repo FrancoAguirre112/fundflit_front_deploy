@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@supabase/supabase-js": "^2.39.0",
     "@tbd54566975/dwn-sdk-js": "^0.2.4",
     "@uiw/react-md-editor": "^4.0.1",

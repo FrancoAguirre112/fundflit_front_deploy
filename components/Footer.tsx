@@ -1,6 +1,7 @@
 import { FOOTER_CONTACT_INFO, FOOTER_LINKS, SOCIALS } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
+import mailIcon from "@/public/assets/mail.svg";
 
 const Footer = () => {
   return (
@@ -49,6 +50,17 @@ const Footer = () => {
                     </p>
                   </Link>
                 ))}
+                {/* Newsletter */}
+                <div className="flex md:flex-row gap-5 w-full justify-center">
+                  <input
+                    type="text"
+                    placeholder="Your email address"
+                    className="w-full rounded-md  sm:text-lg text-base py-[.9rem] sm:px-[1.5rem] px-[1rem] sm:py-[1rem] active:outline-none"
+                  />
+                  <button className="bg-green-50 px-4 rounded-lg hover:bg-black-100">
+                    <Image src={mailIcon} alt="suubscribe" width={24} height={24} />
+                  </button>
+                </div>
               </FooterColumn>
             </div>
             <div className="flex flex-col gap-5">
