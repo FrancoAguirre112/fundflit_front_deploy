@@ -14,7 +14,7 @@ import Spinner from "@/components/Spinner";
 const Campaigns = () => {
   const { web5, myDID } = useWeb5();
   const [campaigns, setCampaigns] = useState<
-    { did:string, data: Campaign; recordID: string }[] | null
+    { did: string; data: Campaign; recordID: string }[] | null
   >(null);
   const {
     register,
@@ -80,22 +80,22 @@ const Campaigns = () => {
 
   return (
     <>
-      <header className="px-10 py-5 bg-gray-10">
-        <div className="flex justify-between flex-col gap-10">
-          <section className="flex justify-between">
-            <article className="w-full flex items-baseline text-4xl font-bold text-left">
+      <header className="bg-gray-10 px-10 py-5">
+        <div className="flex flex-col justify-between gap-10">
+          <section className="flex flex-col justify-between gap-4 md:flex-row">
+            <article className="text-4xl flex w-full items-baseline justify-center font-bold md:justify-start">
               <h1>Explore Campaigns</h1>
             </article>
-            <div className="flex gap-2">
+            <div className="flex flex-col gap-2 md:flex-row">
               <Link
                 href={"/my-campaigns"}
-                className="btn bg-green-50 hover:bg-black-100 whitespace-nowrap"
+                className="btn w-full whitespace-nowrap bg-green-50 hover:bg-black-100"
               >
                 My Campaigns
               </Link>
               <Link
                 href={"/campaigns/create"}
-                className="btn bg-green-50 hover:bg-black-100 whitespace-nowrap"
+                className="btn w-full whitespace-nowrap bg-green-50 hover:bg-black-100"
               >
                 Create a campaign
               </Link>
@@ -116,7 +116,7 @@ const Campaigns = () => {
             <div className="flex gap-2">
               <button
                 type="submit"
-                className="bg-green-50 hover:bg-black-100 w-full"
+                className="w-full bg-green-50 hover:bg-black-100"
               >
                 Search
               </button>
@@ -133,17 +133,17 @@ const Campaigns = () => {
       </header>
       {campaigns !== null ? (
         <div>
-          <section className="h-full mt-4">
+          <section className="mt-4 h-full">
             {campaigns === null ? (
-              <section className="text-3xl font-medium p-60 text-center">
+              <section className="text-3xl p-60 text-center font-medium">
                 Place a campaign name to start searching
               </section>
             ) : campaigns.length === 0 ? (
-              <section className="text-3xl font-medium p-60 text-center">
+              <section className="text-3xl p-60 text-center font-medium">
                 Couldn't find any campaign with that name
               </section>
             ) : (
-              <section className="flex flex-col md:grid lg:grid-cols-4 md:grid-cols-3 gap-6 max-container padding-container">
+              <section className="max-container padding-container flex flex-col gap-6 md:grid md:grid-cols-3 lg:grid-cols-4">
                 {campaigns.map((campaign) => (
                   <div key={campaign.data.id}>
                     {

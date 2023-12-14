@@ -4,7 +4,6 @@ import { NAV_LINKS } from "@/constants";
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Button from "./Button";
 import LogIn from "./LogIn";
 
 const Navbar = () => {
@@ -37,7 +36,7 @@ const Navbar = () => {
         <LogIn />
       </div>
       {/* Mobile Navigation */}
-      <div className="sm:hidden flex flex-1 justify-end items-center">
+      <div className="lg:hidden flex flex-1 justify-end items-center">
         <Image
           src={toggle ? "/assets/close.svg" : "/assets/menu.svg"}
           alt="menu"
@@ -50,9 +49,14 @@ const Navbar = () => {
       <div
         className={`${
           toggle ? "flex" : "hidden"
-        } p-6 bg-black-100 absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-md w-[50%] flex flex-col pt-10`}
+        } p-6 bg-black-100 absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-md flex flex-col pt-10`}
       >
-        <ul className="h-full gap-12 lg:flex">
+        <ul
+          className="h-full gap-12 lg:flex"
+          onClick={() => {
+            setToggle(false);
+          }}
+        >
           {NAV_LINKS.map((link) => (
             <Link
               href={link.href}

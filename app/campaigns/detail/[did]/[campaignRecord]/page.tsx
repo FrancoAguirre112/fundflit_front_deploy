@@ -212,7 +212,7 @@ const CampaignDetails = () => {
   return (
     <>
       {campaign !== null ? (
-        <div className="flex flex-col gap-4 bg-gray-10 p-10 ">
+        <div className="flex flex-col gap-4 bg-gray-10 py-10 px-5 md:px-10 ">
           {/* Title */}
           <header className="w-full text-center">
             <article>

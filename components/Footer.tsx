@@ -66,7 +66,7 @@ const Footer = () => {
         </div>
         <div className="border bg-gray-10" />
         <p className="regular-14 w-full text-center text-gray-30">
-          2023
+          <span>2023 </span>
           <Link
             href="#"
             className="text-green-50 hover:text-gray-50 hover:font-medium"

@@ -18,7 +18,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <html lang="en">
         <body >
           <Navbar />
-          <main className="grid grid-rows-[auto_1fr_auto] min-h-screen">{children}</main>
+          <main className="min-h-screen">{children}</main>
           <Footer />
         </body>
       </html>
