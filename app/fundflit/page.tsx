@@ -2,32 +2,86 @@ import React from "react";
 
 const Fundflit = () => {
   return (
-    <div className="flex flex-col gap-4 mt-10 mx-10">
+    <div className="flex flex-col gap-10 mt-10 mx-10">
       <section className="flex flex-col gap-2">
         <h2 className="text-2xl font-semibold">How do we work?</h2>
         <p>
-          Fundflit give it's users the ability to create crofunding campaigns by
-          leveraging Web 5 which means you are in control of your data. By
-          utilizing a DID connected to an Ethereum account you are able to receive or give donations to other people's projects.
+          At Fundflit, our approach revolves around empowering users to create
+          and engage in crowdfunding campaigns while leveraging the capabilities
+          of Web5 technology. This means you are not just a participant; you are
+          in control of your data, identity, and the future of your campaigns.
         </p>
       </section>
 
       <section className="flex flex-col gap-2">
-        <h2 className="text-2xl font-semibold">What is a DID?</h2>
+        <h2 className="text-2xl font-semibold">
+          Creating Campaigns with Web5:
+        </h2>
         <p>
-          A DID (Decentralized Identifier) is a method of virtual identification
-          that is unique to you, with your DID you can gather the data on the
-          web5 nodes related to that DID.
+          With Fundflit, users can create crowdfunding campaigns, and tap into
+          the transformative potential of Web5. This technology ensures a
+          decentralized and secure environment where you retain full control
+          over your data. Your campaign, your rules.
         </p>
       </section>
 
       <section className="flex flex-col gap-2">
-        <h2 className="text-2xl font-semibold">Who can see my campaign?</h2>
+        <h2 className="text-2xl font-semibold">DID and Ethereum:</h2>
         <p>
-          The only people that can see your campaign are those who posses your
-          DID or the link to your campaign. No one can access your campaign
-          without this information, that includes us. With Web 5 you are truly
-          in possession of your data.
+          Fundflit integrates Decentralized Identifiers (DIDs) connected to
+          Ethereum accounts. Your DID serves as a unique virtual identification,
+          granting you unparalleled control over your data on the Web5 nodes
+          associated with that identifier. This advanced identification method
+          ensures a secure and private crowdfunding experience.
+        </p>
+      </section>
+
+      <section className="flex flex-col gap-2">
+        <h2 className="text-2xl font-semibold">
+          Giving and Receiving with Confidence:
+        </h2>
+        <p>
+          Through the utilization of DIDs connected to Ethereum accounts, users
+          gain the ability to seamlessly give or receive donations for projects.
+          This process is not only efficient but also ensures the transparency
+          and security that Web5 technology brings to the forefront.
+        </p>
+      </section>
+
+      <section className="flex flex-col gap-2">
+        <h2 className="text-2xl font-semibold">Understanding DIDs:</h2>
+        <p>
+          A Decentralized Identifier is more than just a virtual ID; it's a key
+          to unlocking control over your online presence. With your DID, you can
+          access and manage the data on Web5 nodes linked to your identifier,
+          ensuring a level of sovereignty over your personal information that
+          traditional platforms often lack.
+        </p>
+      </section>
+
+      <section className="flex flex-col gap-2">
+        <h2 className="text-2xl font-semibold">Campaign Visibility:</h2>
+        <p>
+          Your campaign on Fundflit is not open to the public by default. Only
+          individuals possessing your DID or those with a direct link to your
+          campaign can access it. Of course, you can decide to make it public,
+          if you want. This heightened level of privacy ensures that your
+          project remains visible only to those you choose to share it with,
+          providing a secure and controlled crowdfunding environment.
+        </p>
+      </section>
+
+      <section className="flex flex-col gap-2">
+        <h2 className="text-2xl font-semibold">Data Ownership:</h2>
+        <p>
+          In Web5, data ownership is a fundamental principle. With Fundflit, you
+          are truly in possession of your data. This means that not only can
+          other entities not access your campaign without the proper
+          information, but even Fundflit itself is unable to intrude on your
+          campaign details. Your data, your campaign, your control. <br />
+          Fundflit merges the innovative power of Web5 with the principles of
+          decentralization, privacy, and user control, redefining the
+          crowdfunding experience.
         </p>
       </section>
     </div>

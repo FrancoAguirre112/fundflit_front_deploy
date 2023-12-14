@@ -7,7 +7,7 @@ const About_Hero = () => {
   return (
     <section className="flex flex-col items-center justify-center">
       <div className="flex h-[465px] w-full flex-col items-center justify-center bg-[#0A2640] px-5 text-center sm:h-[565px] md:h-[665px] md:px-14 lg:h-[765px] lg:px-24">
-        <h2 className="text-[1.7rem] text-gray-100 sm:text-[2.6rem] md:text-[3rem] lg:text-[4rem]">
+        <h2 className="text-[1.7rem] text-gray-100 md:text-[45px] font-bold">
           Fundflit is where Innovation Meets Community in the Web5 Crowdfunding
           Frontier.
         </h2>

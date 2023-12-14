@@ -4,7 +4,7 @@ import { appImages } from "@/constants";
 
 const FAQs_Section = () => {
   return (
-    <main className="relative z-30 pb-20 mb-20 padding-container max-container flex flex-col py-[5rem]">
+    <main className="relative z-30 pb-20 mb-32 padding-container max-container flex flex-col py-[5rem]">
       <h2 className="py-[2.5rem] text-center text-[30px] font-[700] lg:pl-[2rem] lg:text-left lg:text-[40px]">
         We Ensure <span className="text-green-50"> Security</span>,
         <span className="text-green-50">Trust</span>, <br />
