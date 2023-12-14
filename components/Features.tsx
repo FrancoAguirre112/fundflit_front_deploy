@@ -13,7 +13,7 @@ const Features = () => {
         while incorporating innovative elements.
       </p>
       <div className="flexBetween padding-container max-container flex flex-col pb-10">
-        <div className="flexBetween flex-wrap gap-3">
+        <div className="flexBetween flex flex-col md:grid md:grid-cols-4 md:h-[22rem] gap-3 w-full">
           {features.map((feature) => (
             <FeaturesCards key={feature.label} {...feature} />
           ))}

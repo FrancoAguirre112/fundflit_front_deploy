@@ -6,7 +6,7 @@ const Our_Team = () => {
       <div className="w-[80%] sm:w-[70%] md:w-[60%]">
         <span className="text-xs md:text-base">Our Team</span>
         <h2 className="my-4 text-[1.7rem] sm:text-[2.5rem] md:text-[3rem]">
-          The men behind the sin
+          Meet the Men Behind Fundflit
         </h2>
         <p className="text-base leading-8">
           Our team is comprised of individuals who bring a wealth of experience,

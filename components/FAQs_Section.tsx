@@ -4,7 +4,7 @@ import { appImages } from "@/constants";
 
 const FAQs_Section = () => {
   return (
-    <main className="relative z-30 pb-20 mb-32 padding-container max-container flex flex-col py-[5rem]">
+    <main className="relative z-30   padding-container max-container flex flex-col py-[5rem]">
       <h2 className="py-[2.5rem] text-center text-[30px] font-[700] lg:pl-[2rem] lg:text-left lg:text-[40px]">
         We Ensure <span className="text-green-50"> Security</span>,
         <span className="text-green-50">Trust</span>, <br />
@@ -66,7 +66,7 @@ const FAQs_Section = () => {
           </div>
         </div>
 
-        <div className="m-auto mt-[6rem] flex w-full flex-col justify-between sm:mt-[0]">
+        <div className="m-auto flex w-full flex-col justify-between">
           <p className="w-full py-10 pr-5 text-center lg:text-left">
             Got questions? We've got answers. Explore our FAQs to find quick
             solutions and insights about Fundflit. Whether you're a founder or

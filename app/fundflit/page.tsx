@@ -2,9 +2,9 @@ import React from "react";
 
 const Fundflit = () => {
   return (
-    <div className="flex flex-col gap-10 mt-10 mx-10">
-      <section className="flex flex-col gap-2">
-        <h2 className="text-2xl font-semibold">How do we work?</h2>
+    <div className="flex flex-col gap-16 mt-10 mb-40 mx-60">
+      <section className="flex flex-col gap-6">
+        <h2 className="text-2xl font-bold">How do we work?</h2>
         <p>
           At Fundflit, our approach revolves around empowering users to create
           and engage in crowdfunding campaigns while leveraging the capabilities
@@ -13,8 +13,8 @@ const Fundflit = () => {
         </p>
       </section>
 
-      <section className="flex flex-col gap-2">
-        <h2 className="text-2xl font-semibold">
+      <section className="flex flex-col gap-6">
+        <h2 className="text-2xl font-bold">
           Creating Campaigns with Web5:
         </h2>
         <p>
@@ -25,8 +25,8 @@ const Fundflit = () => {
         </p>
       </section>
 
-      <section className="flex flex-col gap-2">
-        <h2 className="text-2xl font-semibold">DID and Ethereum:</h2>
+      <section className="flex flex-col gap-6">
+        <h2 className="text-2xl font-bold">DID and Ethereum:</h2>
         <p>
           Fundflit integrates Decentralized Identifiers (DIDs) connected to
           Ethereum accounts. Your DID serves as a unique virtual identification,
@@ -36,8 +36,8 @@ const Fundflit = () => {
         </p>
       </section>
 
-      <section className="flex flex-col gap-2">
-        <h2 className="text-2xl font-semibold">
+      <section className="flex flex-col gap-6">
+        <h2 className="text-2xl font-bold">
           Giving and Receiving with Confidence:
         </h2>
         <p>
@@ -48,8 +48,8 @@ const Fundflit = () => {
         </p>
       </section>
 
-      <section className="flex flex-col gap-2">
-        <h2 className="text-2xl font-semibold">Understanding DIDs:</h2>
+      <section className="flex flex-col gap-6">
+        <h2 className="text-2xl font-bold">Understanding DIDs:</h2>
         <p>
           A Decentralized Identifier is more than just a virtual ID; it's a key
           to unlocking control over your online presence. With your DID, you can
@@ -59,8 +59,8 @@ const Fundflit = () => {
         </p>
       </section>
 
-      <section className="flex flex-col gap-2">
-        <h2 className="text-2xl font-semibold">Campaign Visibility:</h2>
+      <section className="flex flex-col gap-6">
+        <h2 className="text-2xl font-bold">Campaign Visibility:</h2>
         <p>
           Your campaign on Fundflit is not open to the public by default. Only
           individuals possessing your DID or those with a direct link to your
@@ -71,8 +71,8 @@ const Fundflit = () => {
         </p>
       </section>
 
-      <section className="flex flex-col gap-2">
-        <h2 className="text-2xl font-semibold">Data Ownership:</h2>
+      <section className="flex flex-col gap-6">
+        <h2 className="text-2xl font-bold">Data Ownership:</h2>
         <p>
           In Web5, data ownership is a fundamental principle. With Fundflit, you
           are truly in possession of your data. This means that not only can

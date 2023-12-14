@@ -3,16 +3,16 @@ import { BiSolidBadgeCheck } from "react-icons/bi";
 const Vision = () => {
   const items = [
     {
-      product: "Product Ownership",
+      product: "Connect with a Global Community",
     },
     {
-      product: "Global Marketing by DAO",
+      product: "Transparency at Every Step",
     },
     {
-      product: "Freelancing ",
+      product: "Innovate with Confidence",
     },
     {
-      product: "Boosting Economy",
+      product: "Future-Proof Your Dreams",
     },
   ];
 
@@ -30,11 +30,11 @@ const Vision = () => {
           Fundflit <br /> value proposition
         </h2>
         <p className="text-base leading-8">
-          {" "}
-          Handshake infographic mass market crowdfunding iteration. Sales user
-          experience branding growth hacking holy grail monetization conversion
-          prototype stock network effects. Learning curve network effects return
-          on investment.
+          At Fundflit, we transcend traditional crowdfunding; we usher in a new
+          era of possibilities with the power of Web5 technology. Our platform
+          stands as a beacon for startup founders and investors seeking more
+          than just a funding platform—it's a dynamic ecosystem where dreams
+          take flight and communities flourish.
         </p>
         <div className="w-full flex flex-wrap justify-start gap-5 mt-8">
           {items.map((item) => (

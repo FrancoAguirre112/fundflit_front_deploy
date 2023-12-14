@@ -1,6 +1,6 @@
 // NAVIGATION
 export const NAV_LINKS = [
-  { href: "/fundflit", key: "how_fundflit_work", label: "How Fundflit Work?" },
+  { href: "/fundflit", key: "how_fundflit_work", label: "How Fundflit Works" },
   { href: "/about", key: "about", label: "About" },
   { href: "/campaigns", key: "campaigns", label: "Campaigns" },
   { href: "/contact", key: "contact_us", label: "Contact Us" },
@@ -154,15 +154,15 @@ export const features = [
 export const numbers = [
   {
     value: 120 + "m",
-    title: "Cool feature title",
+    title: "Cummulative Funding",
   },
   {
-    value: 10 + ".000",
-    title: "Cool feature title",
+    value: 200,
+    title: "Funded Startups",
   },
   {
-    value: 240,
-    title: "Cool feature title",
+    value: 2030,
+    title: "Tentative Duration",
   },
 ];
 

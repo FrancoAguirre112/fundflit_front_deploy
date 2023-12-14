@@ -20,19 +20,19 @@ const FAQs = () => {
   };
 
   return (
-    <main className="sm:mt-[0] mt-[5rem] pb-[1rem] mb-[3rem] ">
-      <h3 className="text-gray-90 text-[20px] font-bold mb-5 text-center lg:text-left">
+    <main className="mb-[3rem] mt-[5rem]">
+      <h3 className="mb-5 text-center text-[20px] font-bold text-gray-90 lg:text-left">
         Frequently Asked Questions (FAQs)
       </h3>
 
-      <div className="h-[24rem]">
+      <div>
         {faqItems.map((item) => (
-          <div key={item.id}>
+          <div key={item.id} className="flex flex-col justify-start items-start">
             <div
-              className="bg-white flex items-center justify-between px-3 py-6 mb-[2px] rounded-md w-full cursor-pointer font-semibold"
+              className="mb-[2px] flex w-full cursor-pointer items-center justify-between rounded-md bg-white px-3 py-6 font-semibold"
               onClick={() => toggleAnswer(item.id)}
             >
-              <span className="text-[1rem]">{item.question}</span>
+              <span className="mb-4 text-[1rem]">{item.question}</span>
               <IoIosArrowDropdown
                 style={{
                   rotate: visibleAnswer === item.id ? "180deg" : "0deg",
@@ -42,10 +42,10 @@ const FAQs = () => {
             </div>
 
             <div
-              className="bg-transparent px-6 py-[3px] text-[.85rem] w-full pointer-events-none flex items-center "
+              className="pointer-events-none flex w-full items-center bg-transparent px-6 py-[3px] text-[.85rem]"
               style={{
                 opacity: visibleAnswer === item.id ? 1 : 0,
-                height: visibleAnswer === item.id ? "5rem" : "0",
+                height: visibleAnswer === item.id ? "12rem" : "0",
                 transition: "opacity 0.2s ease-in-out, height 0.3s ease-in-out",
               }}
             >

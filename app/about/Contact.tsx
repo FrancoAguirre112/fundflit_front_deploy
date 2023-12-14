@@ -2,13 +2,12 @@ import Button from "../../components/Button";
 
 const Contact = () => {
   return (
-    <section className=" flex items-center justify-center w-full">
+    <section className=" flex items-center justify-center w-full mb-20">
       <div className="relative overflow-hidden bg-[#0A2640] md:p-20 p-8 rounded-2xl md:w-[80%] w-[90%] text-center">
         <div className=" absolute md:w-[50rem] md:h-[50rem] w-[40rem] h-[42rem] rounded-full bg-[#1C3D5B] -top-[35rem] -right-[18rem]"></div>
         <div className="relative z-[1]">
           <h2 className=" lg:text-[40px] text-[1.3rem] text-gray-100">
-            We share our best updates via email. Kindly subscribe with your best
-            email.
+            Kindly .... best email to stay updated!
           </h2>
           <div className="flex md:flex-row flex-col gap-5 md:mt-10 mt-8 justify-center">
             <input
