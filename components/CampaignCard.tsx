@@ -19,8 +19,6 @@ export const CampaignCard = ({ campaign, did, record }: any) => {
     <a
       href={`/campaigns/detail/${did}/${record}`}
       className="flex flex-col gap-2 rounded-md border-2 bg-white transition-transform hover:scale-95"
-      target="_blank"
-      rel="noopener noreferrer"
       onClick={openLinkInNewTab}
     >
       {!campaign.public && (
@@ -42,7 +40,7 @@ export const CampaignCard = ({ campaign, did, record }: any) => {
         <div>
           <GoalBar progress={progress} />
           <h3>{`${campaign.current_funds.toFixed(2)} ETH pledged`}</h3>
-          <h3>{`${progress>100 ? 100 : progress.toFixed(2)}% funded`}</h3>
+          <h3>{`${progress > 100 ? 100 : progress.toFixed(2)}% funded`}</h3>
         </div>
       </section>
     </a>
