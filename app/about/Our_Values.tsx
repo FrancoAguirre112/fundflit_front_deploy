@@ -10,7 +10,6 @@ const Our_Values = () => {
             Things we believe in
           </h2>
           <p className="text-base leading-8">
-            {" "}
             At the heart of our platform lie a set of core values that steer our
             every decision, shape our culture, and define the way we engage with
             our community. These values are more than principles; they are the

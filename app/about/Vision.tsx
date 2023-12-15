@@ -17,16 +17,16 @@ const Vision = () => {
   ];
 
   return (
-    <section className=" flex md:flex-row flex-col lg:gap-20 gap-14 pb-28 mb:pt-10 pt-0 lg:px-20 md:px-10 px-7 justify-center items-center">
-      <div className="xl:w-[35%] md:w-[42%] h-[28rem]">
+    <section className="mb:pt-10 flex flex-col items-center justify-center gap-14 px-7 pb-28 pt-0 md:flex-row md:px-10 lg:gap-20 lg:px-20">
+      <div className="h-[28rem] md:w-[42%] xl:w-[35%]">
         <img
           src="/assets/about-img4.png"
           alt=""
-          className="w-full h-full object-cover rounded-2xl"
+          className="h-full w-full rounded-2xl object-cover"
         />
       </div>
-      <div className="lg:w-[47%] md:w-[50%]">
-        <h2 className="w-full md:text-[3rem] sm:text-[2.5rem] text-[1.8rem] mb-5">
+      <div className="md:w-[50%] lg:w-[47%]">
+        <h2 className="mb-5 w-full text-[1.8rem] sm:text-[2.5rem] md:text-[3rem]">
           Fundflit <br /> value proposition
         </h2>
         <p className="text-base leading-8">
@@ -36,11 +36,11 @@ const Vision = () => {
           than just a funding platform—it's a dynamic ecosystem where dreams
           take flight and communities flourish.
         </p>
-        <div className="w-full flex flex-wrap justify-start gap-5 mt-8">
+        <div className="mt-8 flex w-full flex-wrap justify-start gap-5">
           {items.map((item) => (
-            <div key={item.product} className="flex w-[47%] ">
-              <BiSolidBadgeCheck size={18} className=" text-coral-green mr-3" />
-              <p className=" md:text-base text-sm">{item.product}</p>
+            <div key={item.product} className="flex w-[45%]">
+              <BiSolidBadgeCheck size={18} className="mr-3 text-coral-green" />
+              <p className="text-sm md:text-base">{item.product}</p>
             </div>
           ))}
         </div>

@@ -42,14 +42,23 @@ export const FEATURES = [
 export const FOOTER_LINKS = [
   {
     title: "Learn More",
-    links: ["About Fundflit", "Privacy Policy", "Contact Us", "Jobs"],
-    url: ["/about", "/", "/contact", "/"]
+    links: [
+      { title: "About Fundflit", path: "/about" },
+      { title: "Privacy Policy", path: "/" },
+      { title: "Contact Us", path: "/contact" },
+      { title: "Jobs", path: "/" },
+    ],
   },
   {
     title: "Our Community",
-    links: ["Discord", "Hacking Club", "Pragmatic Builders"],
+    links: [
+      { title: "Discord", path: "/" },
+      { title: "Hacking Club", path: "/" },
+      { title: "Pragmatic Builders", path: "/" },
+    ],
   },
 ];
+
 
 export const FOOTER_CONTACT_INFO = {
   title: "Contact Us",
@@ -153,7 +162,7 @@ export const features = [
 // About page Our number section
 export const numbers = [
   {
-    value: 120 + "m",
+    value: "$" + 120 + "m",
     title: "Cummulative Funding",
   },
   {

@@ -5,11 +5,12 @@ import mailIcon from "@/public/assets/mail.svg";
 
 const Footer = () => {
   return (
-    <footer className="flexCenter my-24">
+    <footer className="flexCenter mt-24 mb-10">
       <div className="padding-container max-container flex w-full flex-col gap-14">
         <div className="flex flex-col items-start justify-center gap-[10%] md:flex-row">
           <Link href="/" className="mb-10">
             <Image
+              className="hover:scale-110"
               src="/assets/Fundflit.png"
               alt="logo"
               width={135}
@@ -23,11 +24,11 @@ const Footer = () => {
                 <ul className="regular-14 flex flex-col gap-4 text-gray-30">
                   {columns.links.map((link) => (
                     <Link
-                      href="/"
-                      key={link}
+                      href={link.path}
+                      key={link.title}
                       className="hover:text-green-50 hover:font-medium"
                     >
-                      {link}
+                      {link.title}
                     </Link>
                   ))}
                 </ul>
@@ -51,14 +52,23 @@ const Footer = () => {
                   </Link>
                 ))}
                 {/* Newsletter */}
+                <h4 className="font-bold whitespace-nowrap mb-1">
+                  Subscribe to our newsletter
+                </h4>
                 <div className="flex md:flex-row gap-5 w-full justify-center">
                   <input
                     type="text"
                     placeholder="Your email address"
                     className="w-full rounded-md  sm:text-lg text-base py-[.9rem] sm:px-[1.5rem] px-[1rem] sm:py-[1rem] active:outline-none"
                   />
+
                   <button className="bg-green-50 px-4 rounded-lg hover:bg-black-100">
-                    <Image src={mailIcon} alt="suubscribe" width={24} height={24} />
+                    <Image
+                      src={mailIcon}
+                      alt="suubscribe"
+                      width={24}
+                      height={24}
+                    />
                   </button>
                 </div>
               </FooterColumn>
@@ -67,7 +77,11 @@ const Footer = () => {
               <FooterColumn title={SOCIALS.title}>
                 <ul className="regular-14 flex gap-4 text-gray-30">
                   {SOCIALS.links.map((link) => (
-                    <Link href="/" key={link}>
+                    <Link
+                      className="hover:scale-90 transition-transform"
+                      href="/"
+                      key={link}
+                    >
                       <Image src={link} alt="logo" width={24} height={24} />
                     </Link>
                   ))}

@@ -270,7 +270,7 @@ const CampaignDetails = () => {
 
             {/* Story */}
             <div
-              className="flex flex-col gap-2 rounded-lg bg-white p-4"
+              className="flex flex-col gap-2 rounded-lg bg-white p-4 lg:px-60"
               data-color-mode="light"
             >
               <MDEditor.Markdown

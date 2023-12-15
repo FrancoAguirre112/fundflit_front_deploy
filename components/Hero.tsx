@@ -33,7 +33,7 @@ const Hero = () => {
           </Link>
         </div>
       </div>
-      <div className="m-auto pt-[4.5rem] hover:scale-100 sm:flex-row lg:w-2/5 lg:px-20">
+      <div className="m-auto pt-[4.5rem] hover:scale-100 sm:flex-row lg:w-2/5 px-10 md:px-20">
         <Image
           src="/assets/Group 216.png"
           alt="hero image"

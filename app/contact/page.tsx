@@ -5,13 +5,13 @@ import Link from "next/link";
 const Contact = () => {
   return (
     <div className="max-container">
-      <div className="flexCenter h-[350px] p-6 text-center text-[1.7rem] font-bold md:p-20 md:text-[45px]">
+      <div className="flexCenter h-[350px] p-6 md:px-14 text-center text-[1.7rem] font-bold md:p-20 md:text-[45px]">
         Get In Touch with Us. We'll be glad to hear from you.
       </div>
       <div className="flexCenter flex-col gap-10 bg-[#0A2640] px-7 py-20 md:flex-row md:gap-10 md:p-20">
         <div className="w-full text-white md:w-[50%]">
-          <h2 className="text-[2rem] font-bold md:text-[3rem]">Get a quote</h2>
-          <p className="w-[80%] text-gray-20">Make your Inquiry</p>
+          <h2 className="text-[2rem] font-bold md:text-[3rem]">Make your Inquiry</h2>
+          <p className="w-[80%] text-gray-20">Send us a message and we'll response to you as shortly as we can.</p>
           <div className="mb-5 mt-10 md:my-28">
             {contactItems.direct.map((item, index) => (
               <div
