@@ -6,12 +6,12 @@ const About_Hero = () => {
 
   return (
     <section className="flex flex-col items-center justify-center">
-      <div className="h-[400px] flex w-full flex-col items-center justify-center bg-[#0A2640] px-5 py-20 text-center md:px-14 lg:h-[500px] lg:px-24 lg:pb-20">
+      <div className="flex h-[500px] w-full flex-col items-center justify-center bg-[#0A2640] px-5 py-20 text-center md:px-14 md:h-[600px] lg:px-24 lg:pb-20">
         <h2 className="text-[1.7rem] font-bold text-gray-100 md:text-[45px]">
           Fundflit is where Innovation Meets Community in the Web5 Crowdfunding
           Frontier.
         </h2>
-        <p className="my-5 w-[90%] lg:pb-20 pb-5 text-[12px] leading-5 text-gray-200 sm:w-[80%] sm:text-sm md:text-base md:leading-8">
+        <p className="my-5 w-[90%] pb-5 text-[12px] leading-5 text-gray-200 sm:w-[80%] sm:text-sm md:text-base md:leading-8 lg:pb-20">
           Join us on a journey where dreams take flight, innovation knows no
           bounds, and a global community comes together to shape the future.
         </p>
