@@ -2,6 +2,7 @@ import Image from "next/image";
 import GoalBar from "./GoalBar";
 import lock from "@/public/assets/lock.svg";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 export const CampaignCard = ({ campaign, did, record }: any) => {
   const [progress, setProgress] = useState(0);
@@ -10,16 +11,10 @@ export const CampaignCard = ({ campaign, did, record }: any) => {
     setProgress(prog);
   }, [campaign.goal, campaign.current_funds]);
 
-  const openLinkInNewTab = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
-    window.open(`/campaigns/detail/${did}/${record}`, "_blank");
-  };
-
   return (
-    <a
+    <Link
       href={`/campaigns/detail/${did}/${record}`}
       className="flex flex-col gap-2 rounded-md border-2 bg-white transition-transform hover:scale-95"
-      onClick={openLinkInNewTab}
     >
       {!campaign.public && (
         <div className="absolute m-2 rounded-lg bg-black-100 p-2">
@@ -43,6 +38,6 @@ export const CampaignCard = ({ campaign, did, record }: any) => {
           <h3>{`${progress > 100 ? 100 : progress.toFixed(2)}% funded`}</h3>
         </div>
       </section>
-    </a>
+    </Link>
   );
 };

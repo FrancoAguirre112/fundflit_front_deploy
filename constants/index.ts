@@ -191,15 +191,15 @@ export const members = [
   },
   {
     id: 3,
-    imgUrl: "/assets/fawaz.jpg",
-    name: "Fawaz Oduola",
-    position: "Backend Developer",
-  },
-  {
-    id: 4,
     imgUrl: "/assets/gloria.jpg",
     name: "Gloria Ugwuanyi",
     position: "Frontend Developer & Product Designer",
+  },
+  {
+    id: 4,
+    imgUrl: "/assets/fawaz.jpg",
+    name: "Fawaz Oduola",
+    position: "Backend Developer",
   },
 ];
 
